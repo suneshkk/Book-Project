@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import BackButton from '../component/BackButton';
-import Loading from '../component/Loading';
+import BackButton from '../component/BackButton.jsx';
+import Loading from '../component/Loading.jsx';
 const CreateBooks = () => {
     const [title, setTitle] = useState("");
     const [author, setAuthor] = useState("");

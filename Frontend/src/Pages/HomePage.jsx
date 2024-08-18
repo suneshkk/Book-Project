@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { MdOutlineAddBox, MdOutlineDelete } from "react-icons/md";
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import Loading from '../component/Loading';
+import Loading from '../component/Loading.jsx';
 import { AiOutlineEdit } from "react-icons/ai";
 import { BsInfoCircle } from "react-icons/bs";
 import Background from '../assets/Image/Background.jpg';

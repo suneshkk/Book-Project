@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
-import BackButton from "../component/BackButton";
-import Loading from "../component/Loading";
+import BackButton from "../component/BackButton.jsx";
+import Loading from "../component/Loading.jsx";
 const ShowPage = () => {
     const [book, setBook] = useState({});
     const [loading, setLoading] = useState(true);
