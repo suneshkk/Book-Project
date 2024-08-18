@@ -12,7 +12,7 @@ function DeletePage() {
     const handleDeleteBook = async () => {
         setLoading(true);
         try {
-            const response = await axios.delete(`http://localhost:5000/books/${id}`);
+            const response = await axios.delete(`https://book-project-6.onrender.com/books/${id}`);
             navigate('/');
         } catch (error) {
             setLoading(false);
