@@ -1,10 +1,10 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import CreateBooks from './Pages/CreateBooks';
-import ShowPage from './Pages/ShowPage';
-import EditPage from './Pages/EditPage';
-import DeletePage from './Pages/DeletePage';
+import HomePage from './pages/HomePage.jsx';
+import CreateBooks from './Pages/CreateBooks.jsx';
+import ShowPage from './Pages/ShowPage.jsx';
+import EditPage from './Pages/EditPage.jsx';
+import DeletePage from './Pages/DeletePage.jsx';
 function App() {
   return (
     <Routes>
