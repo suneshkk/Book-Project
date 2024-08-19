@@ -27,7 +27,7 @@ app.use('/books', bookRoutes);
 // initiates a connection to a MongoDB database using Mongoose.
 //The Mongoose library is being used to interact with MongoDB.
 mongoose
-    .connect(mongoDBURL,{useNewUrlParser: true, useUnifiedTopology: true})
+    .connect(mongoDBURL)
     //This is a Promise method
     .then(() => {
         console.log("App connected to database");
