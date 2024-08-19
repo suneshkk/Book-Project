@@ -27,15 +27,17 @@ app.use('/books', bookRoutes);
 // initiates a connection to a MongoDB database using Mongoose.
 //The Mongoose library is being used to interact with MongoDB.
 mongoose
-    .connect(mongoDBURL)
+    .connect(mongoDBURL,{useNewUrlParser: true, useUnifiedTopology: true})
     //This is a Promise method
     .then(() => {
         console.log("App connected to database");
         //This line starts the Express application server and tells it to listen for incoming HTTP requests on a specific port.
         app.listen(PORT, () => {
             console.log(`app is listening to port:${PORT}`);
-        })
+        });
     })
     .catch((error) => {
         console.log("Database connection filed",error);
+        process.exit(1); // Exit the process if the database connection fails
+
     });
