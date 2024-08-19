@@ -16,7 +16,7 @@ const EditPage = () => {
         const fetchBook = async () => {
             setLoading(true);
             try {
-                const response = await axios.get(`https://book-project-6.onrender.com/books/${id}`);
+                const response = await axios.get(`http://localhost:5000/books/${id}`);
                 setAuthor(response.data.author);
                 setPublishYear(response.data.publishYear);
                 setTitle(response.data.title);
@@ -40,7 +40,7 @@ const EditPage = () => {
         };
         setLoading(true);
         try {
-            await axios.put(`https://book-project-6.onrender.com/books/${id}`, data);
+            await axios.put(`http://localhost:5000/books/${id}`, data);
             navigate("/");
         } catch (error) {
             alert("An error happened, please check the console.");

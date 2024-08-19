@@ -8,7 +8,7 @@ import DeletePage from './Pages/DeletePage.jsx';
 function App() {
   return (
     <Routes>
-      <Route path='/books' element={<HomePage />} />
+      <Route path='/' element={<HomePage />} />
       <Route path='/books/create' element={<CreateBooks />} />
       <Route path='/books/details/:id' element={<ShowPage />} />
       <Route path='/books/edit/:id' element={<EditPage />} />
