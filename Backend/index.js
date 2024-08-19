@@ -2,7 +2,7 @@
 import express from 'express';
 
 //importing port and mongodbconnection url from pre definned confiq file 
-import { PORT, mongoDBURL } from './confiq.js';
+import { PORT, mongoDBURL } from './config.js';
 
 // import mongoose for data validation with a schema 
 import mongoose from 'mongoose';
@@ -37,5 +37,5 @@ mongoose
         })
     })
     .catch((error) => {
-        console.log(error);
+        console.log("Database connection filed",error);
     });
